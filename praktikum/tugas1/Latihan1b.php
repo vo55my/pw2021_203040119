@@ -4,56 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Latihan1b</title>
 </head>
 <body>
     <table border="1" cellspacing="0" cellpadding="10">
-        <tr>
-            <th></th>
-            <?php for ($i = 1; $i <= 5; $i++) : ?>
-                <th>Kolom <?= $i; ?></th>
-            <?php endfor; ?>
-        </tr>
-
-        <tr>
-        <th>Baris 1</th>
-            <?php for ($i = 1; $i <= 1; $i++) 
-                for ($j = 1 ; $j <= 5 ; $j++) : ?>
-                <th><?php echo "Baris $i, Kolom $j" ?></th>
-            <?php endfor; ?>
-        </tr>
-
-        <tr>
-        <th>Baris 2</th>
-            <?php for ($i = 2; $i <= 2; $i++) 
-                for ($j = 1 ; $j <= 5 ; $j++) : ?>
-                <th><?php echo "Baris $i, Kolom $j" ?></th>
-            <?php endfor; ?>
-        </tr>
-
-        <tr>
-        <th>Baris 3</th>
-            <?php for ($i = 3; $i <= 3; $i++) 
-                for ($j = 1 ; $j <= 5 ; $j++) : ?>
-                <th><?php echo "Baris $i, Kolom $j" ?></th>
-            <?php endfor; ?>
-        </tr>
-
-        <tr>
-        <th>Baris 4</th>
-            <?php for ($i = 4; $i <= 4; $i++) 
-                for ($j = 1 ; $j <= 5 ; $j++) : ?>
-                <th><?php echo "Baris $i, Kolom $j" ?></th>
-            <?php endfor; ?>
-        </tr>
-
-        <tr>
-        <th>Baris 5</th>
-            <?php for ($i = 5; $i <= 5; $i++) 
-                for ($j = 1 ; $j <= 5 ; $j++) : ?>
-                <th><?php echo "Baris $i, Kolom $j" ?></th>
-            <?php endfor; ?>
-        </tr>
+        <?php 
+            $kolom = 1;
+            $baris = 1;
+        ?>
+            <tr>
+                <th></th>
+                <?php for( $kolom; $kolom <= 5; $kolom++ ) : ?>
+                    <th>Kolom <?= $kolom; ?></th>
+                <?php endfor; ?>
+            </tr>
+            <?php for( $baris = 1; $baris <= 5; $baris++ ) : ?>
+            <tr>
+                <th>Baris <?= $baris; ?></th>
+                <?php for( $kolom = 1; $kolom <= 5; $kolom++ ) : ?>
+                    <td><?= "Baris $baris, Kolom $kolom" ?></td>
+                <?php endfor; ?>
+            </tr>
+        <?php endfor; ?>  
     </table>
 </body>
 </html>

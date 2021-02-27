@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tugas 1</title>
 </head>
 <body>
-    <table border="1" cellpadding="20" cellspacing="2" align="center">
+    <table border="2" cellpadding="30" cellspacing="4" align="center">
 		<?php for( $b = 1; $b <= 6; $b++ ) : ?>
 			<tr>
 				<?php for( $k = 1; $k <= 6; $k++ ) : ?>

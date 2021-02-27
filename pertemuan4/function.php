@@ -1,4 +1,14 @@
 <?php
+/*
+Dhaifullah Hilmy
+203040119
+https://github.com/vo55my/pw2021_203040119.git
+Pertemuan 4 - 26 Februari 2021
+Mempelajari tentang Date dan Function dalam PHP
+*/
+?>
+
+<?php
 function salam($waktu = "Datang", $nama = "Admin") {
     return "Selamat $waktu, $nama!";
 }
