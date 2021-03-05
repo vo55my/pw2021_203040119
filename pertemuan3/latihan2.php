@@ -45,5 +45,4 @@ switch ($nama_hari)
     case "Sunday" : echo "Hari Libur";
                         break;
 */
-}
 ?>
