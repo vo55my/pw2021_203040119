@@ -1,3 +1,9 @@
+<?php
+    function gantiStyle($tulisan, $style1 = "style1", $style2 = "style2") {
+        return "<div class = $style2><p class = $style1>$tulisan</p></div>";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,11 +30,6 @@
     </style>
 </head>
 <body>
-    <?php
-    function gantiStyle($tulisan, $style1 = "style1", $style2 = "style2") {
-        return "<div class = $style2><p class = $style1>$tulisan</p></div>";
-    }
-    echo gantiStyle("Selamat datang di praktikum PW");
-    ?>
+    <?= gantiStyle("Selamat datang di praktikum PW"); ?>
 </body>
 </html>
