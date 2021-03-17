@@ -135,7 +135,7 @@ $kampus = [
 <body>
 <h4>Daftar PTN Terbaik 2021 Versi Webometrics</h4>
 <div class="container">
-    <table class="bordered highlight centered">
+    <table class="bordered highlight centered z-depth-5">
         <thead class="grey">
           <tr>
               <th>No.</th>
@@ -151,7 +151,7 @@ $kampus = [
         <?php $i = 1; ?>
         <?php foreach ( $kampus as $k ) : ?>
         <tbody align="center">
-          <tr>
+          <tr class="hoverable">
             <td class="grey lighten-2"><strong><?= $i ?></strong></td>
             <td>
                 <img src="image/<?= $k["logo"]; ?>">
@@ -160,7 +160,7 @@ $kampus = [
             <td><?= $k["alamat"]; ?></td>
             <td><?= $k["berdiri"]; ?></td>
             <td><?= $k["kota"]; ?></td>
-            <td><?= $k["situs"]; ?></td>
+            <td class="blue-text"><?= $k["situs"]; ?></td>
             <td class="grey lighten-2"><strong><?= $k["urutan"]; ?></strong></td>
           </tr>
         </tbody>
