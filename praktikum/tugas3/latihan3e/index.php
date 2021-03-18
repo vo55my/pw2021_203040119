@@ -135,7 +135,7 @@ $kampus = [
 <body>
 <h4>Daftar PTN Terbaik 2021 Versi Webometrics</h4>
 <div class="container">
-    <table class="bordered highlight centered z-depth-5">
+    <table class="bordered highlight centered z-depth-2">
         <thead class="grey">
           <tr>
               <th>No.</th>
