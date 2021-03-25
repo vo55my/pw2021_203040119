@@ -47,7 +47,6 @@ $mahasiswa = [
 </head>
 <body>
     <h1>Daftar Mahasiswa</h1>
-
     <?php foreach( $mahasiswa as $mhs) : ?>
     <ul>
         <li>

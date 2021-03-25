@@ -47,6 +47,5 @@ Mempelajari Array Assosiative dalam PHP
         <?php endforeach; ?>
         <div class="clear"></div>
     <?php endforeach; ?>
-
 </body>
 </html>

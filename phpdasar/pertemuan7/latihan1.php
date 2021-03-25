@@ -61,6 +61,5 @@ $mahasiswa = [
         </li>
         <?php endforeach; ?>
     </ul>
-
 </body>
 </html>

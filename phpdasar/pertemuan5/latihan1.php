@@ -41,6 +41,4 @@ $hari[] = "Kamis";
 $hari[] = "Jumat";
 echo "<br>";
 var_dump($hari);
-
-
 ?>
