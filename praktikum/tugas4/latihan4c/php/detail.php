@@ -23,7 +23,14 @@ $kampus = query("SELECT * FROM kampus WHERE id = $id")[0];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection">
+    <link rel="stylesheet" href="../foundation/assets/css/foundation-float.css">
+    <link rel="stylesheet" href="../foundation/assets/css/foundation-prototype.css">
+    <link rel="stylesheet" href="../foundation/assets/css/foundation-rtl.css">
+    <link rel="stylesheet" href="../foundation/assets/css/foundation.css">
+    <link rel="stylesheet" href="../uikit/css/uikit-rtl.css">
+    <link rel="stylesheet" href="../uikit/css/uikit.css">
+    <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.css" media="screen,projection">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Latihan4c</title>
     <style>
         table {
@@ -43,16 +50,13 @@ $kampus = query("SELECT * FROM kampus WHERE id = $id")[0];
         
         p {
             text-align: left;
+            padding-left: 20px;
+            font-size: 20px;
         }
 
         a {
             margin-top: 40px;
             float: right;
-        }
-
-        p {
-            padding-left: 20px;
-            font-size: 20px;
         }
 
         .clear {
@@ -65,9 +69,9 @@ $kampus = query("SELECT * FROM kampus WHERE id = $id")[0];
     </style>
 </head>
 <body>
-<div class="container">
-    <table class="bordered striped centered z-depth-2">
-        <thead class="grey">
+<div class="container uk-animation-fade">
+    <table class="radius bordered shadow centered">
+        <thead>
             <tr>
                 <th>Logo</th>
                 <th>Keterangan</th>
@@ -75,10 +79,10 @@ $kampus = query("SELECT * FROM kampus WHERE id = $id")[0];
         </thead>
         <tbody>
             <tr>
-                <td rowspan="6"><img src="../assets/img/<?= $kampus["logo"]; ?>"></td>
+                <td rowspan="6"><img class="uk-preserve-width uk-animation-slide-left-small" src="../assets/img/<?= $kampus["logo"]; ?>"></td>
             </tr>
             <tr>
-                <td>
+                <td class="uk-animation-slide-right-small">
                     <p>Nama : <?= $kampus["nama"]; ?></p>
                     <p>Alamat : <?= $kampus["alamat"]; ?></p>
                     <p>Didirikan : <?= $kampus["berdiri"]; ?></p>
@@ -89,7 +93,7 @@ $kampus = query("SELECT * FROM kampus WHERE id = $id")[0];
             </tr>
         </tbody>
     </table>
-    <a href="index.php" class="waves-effect waves-light btn grey darken-2">Kembali</a>
+    <a href="index.php" class="waves-effect waves-light btn grey lighten-1 uk-link-reset">Kembali</a>
 </div>
 <div class="clear"></div>
 </body>

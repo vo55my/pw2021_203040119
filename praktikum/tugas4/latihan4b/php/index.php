@@ -11,7 +11,14 @@ $kampus = query("SELECT * FROM kampus");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection">
+    <link rel="stylesheet" href="../foundation/assets/css/foundation-float.css">
+    <link rel="stylesheet" href="../foundation/assets/css/foundation-prototype.css">
+    <link rel="stylesheet" href="../foundation/assets/css/foundation-rtl.css">
+    <link rel="stylesheet" href="../foundation/assets/css/foundation.css">
+    <link rel="stylesheet" href="../uikit/css/uikit-rtl.css">
+    <link rel="stylesheet" href="../uikit/css/uikit.css">
+    <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.css" media="screen,projection">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Latihan4b</title>
     <style>
         img {
@@ -24,10 +31,9 @@ $kampus = query("SELECT * FROM kampus");
         }
         
         .container {
-            width: 1000px;
-            height: 1000px;
+            width: 1100px;
+            height: 1100px;
             margin: auto;
-            display: flex;
         }
 
         h4 {
@@ -45,10 +51,10 @@ $kampus = query("SELECT * FROM kampus");
     </style>
 </head>
 <body>
-<h4>Daftar PTN Terbaik 2021 Versi Webometrics</h4>
-<div class="container">
-    <table class="bordered highlight centered z-depth-2">
-        <thead class="grey">
+<h4 class="separator-center uk-heading-bullet">Daftar PTN Terbaik 2021 Versi Webometrics</h4>
+<div class="container uk-animation-fade">
+    <table class="radius bordered shadow highlight centered uk-table-hover">
+        <thead>
           <tr>
               <th>No.</th>
               <th>Logo</th>
@@ -62,18 +68,18 @@ $kampus = query("SELECT * FROM kampus");
         </thead>
         <?php $i = 1; ?>
         <?php foreach( $kampus as $k ) : ?>
-        <tbody align="center">
+        <tbody class="uk-animation-toggle" tabindex="0">
           <tr class="hoverable">
-            <td class="grey lighten-2"><strong><?= $i ?></strong></td>
+            <td class="grey lighten-2 uk-animation-slide-right-small"><strong><?= $i ?></strong></td>
             <td>
-                <img src="../assets/img/<?= $k["logo"]; ?>">
+                <img class="uk-preserve-width uk-animation-slide-right-small" src="../assets/img/<?= $k["logo"]; ?>">
             </td>
-            <td><?= $k["nama"]; ?></td>
-            <td><?= $k["alamat"]; ?></td>
-            <td><?= $k["berdiri"]; ?></td>
-            <td><?= $k["kota"]; ?></td>
-            <td class="blue-text"><?= $k["situs"]; ?></td>
-            <td class="grey lighten-2"><strong><?= $k["urutan"]; ?></strong></td>
+            <td class="uk-animation-slide-right-small"><?= $k["nama"]; ?></td>
+            <td class="uk-animation-slide-right-small"><?= $k["alamat"]; ?></td>
+            <td class="uk-animation-slide-right-small"><?= $k["berdiri"]; ?></td>
+            <td class="uk-animation-slide-right-small"><?= $k["kota"]; ?></td>
+            <td class="blue-text uk-animation-slide-right-small"><?= $k["situs"]; ?></td>
+            <td class="grey lighten-2 uk-animation-slide-right-small"><strong><?= $k["urutan"]; ?></strong></td>
           </tr>
         </tbody>
         <?php $i++; ?>
