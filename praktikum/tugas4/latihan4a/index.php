@@ -13,10 +13,10 @@ $result = mysqli_query($conn, "SELECT * FROM kampus");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="foundation/assets/css/foundation-float.css">
-    <link rel="stylesheet" href="foundation/assets/css/foundation-prototype.css">
-    <link rel="stylesheet" href="foundation/assets/css/foundation-rtl.css">
-    <link rel="stylesheet" href="foundation/assets/css/foundation.css">
+    <link rel="stylesheet" href="foundation/css/foundation-float.css">
+    <link rel="stylesheet" href="foundation/css/foundation-prototype.css">
+    <link rel="stylesheet" href="foundation/css/foundation-rtl.css">
+    <link rel="stylesheet" href="foundation/css/foundation.css">
     <link rel="stylesheet" href="uikit/css/uikit-rtl.css">
     <link rel="stylesheet" href="uikit/css/uikit.css">
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection">
@@ -34,7 +34,7 @@ $result = mysqli_query($conn, "SELECT * FROM kampus");
         
         .container {
             width: 1100px;
-            height: 1100px;
+            height: 1000px;
             margin: auto;
         }
 
