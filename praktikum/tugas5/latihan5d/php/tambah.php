@@ -1,4 +1,5 @@
 <?php 
+// Menghubungkan dengan file PHP lainnya
 require 'functions.php';
 
 if (isset($_POST["tambah"])) {
@@ -27,7 +28,7 @@ if (isset($_POST["tambah"])) {
     <title>Form Tambah Data Universitas</title>
 </head>
 <body>
-<div class="uk-card uk-card-default uk-card-body uk-width-1-1">
+<div class="uk-card uk-card-large uk-card-hover uk-card-default uk-card-body uk-position-center">
     <h3>Form Tambah Data Universitas</h3>
     <form action="" method="post" class="uk-form-horizontal">
     <fieldset class="uk-fieldset">

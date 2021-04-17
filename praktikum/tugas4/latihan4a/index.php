@@ -1,8 +1,10 @@
 <?php
 // Melakukan Koneksi ke Database
 $conn = mysqli_connect("localhost", "root", "");
+
 // Memilih Database
 mysqli_select_db($conn, "pw_tubes_203040119");
+
 // Melakukan Query dari Database
 $result = mysqli_query($conn, "SELECT * FROM kampus");
 ?>

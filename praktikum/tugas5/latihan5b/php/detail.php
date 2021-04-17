@@ -1,5 +1,4 @@
 <?php 
-
 // Mengecek apakah ada id yang dikirimkan
 // Jika tidak maka akan dikembalikan ke halaman index.php
 if (!isset($_GET['id'])) {
@@ -7,6 +6,7 @@ if (!isset($_GET['id'])) {
     exit;
 }
 
+// Menghubungkan dengan file PHP lainnya
 require 'functions.php';
 
 // Mengambil id dari url
@@ -14,7 +14,6 @@ $id = $_GET['id'];
 
 // Melakukan query dengan parameter id yang diambil dari url
 $kampus = query("SELECT * FROM kampus WHERE id = $id")[0];
-
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +30,7 @@ $kampus = query("SELECT * FROM kampus WHERE id = $id")[0];
     <link rel="stylesheet" href="../uikit/css/uikit.css">
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.css" media="screen,projection">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Latihan5a</title>
+    <title>Detail</title>
     <style>
         table {
             margin: auto;

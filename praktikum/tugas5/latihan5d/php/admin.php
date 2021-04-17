@@ -1,6 +1,7 @@
 <?php
 // Menghubungkan dengan file PHP lainnya
 require 'functions.php';
+
 // Melakukan Query
 $kampus = query("SELECT * FROM kampus");
 ?>

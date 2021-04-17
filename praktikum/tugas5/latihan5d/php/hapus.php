@@ -1,4 +1,5 @@
 <?php 
+// Menghubungkan dengan file PHP lainnya
 require 'functions.php';
 $id = $_GET['id'];
 

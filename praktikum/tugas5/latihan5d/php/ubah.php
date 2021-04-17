@@ -1,4 +1,5 @@
 <?php 
+// Menghubungkan dengan file PHP lainnya
 require 'functions.php';
 
 $id = $_GET["id"];
@@ -27,10 +28,10 @@ if (isset($_POST["ubah"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../uikit/css/uikit-rtl.css">
     <link rel="stylesheet" href="../uikit/css/uikit.css">
-    <title>Form Update Data Mahasiswa</title>
+    <title>Form Update Data Universitas</title>
 </head>
 <body>
-<div class="uk-card uk-card-default uk-card-body uk-width-1-1">
+<div class="uk-card uk-card-large uk-card-hover uk-card-default uk-card-body uk-position-center">
     <h3>Form Update Data Universitas</h3>
     <form action="" method="post" class="uk-form-horizontal">
     <input type="hidden" name="id" id="id" value="<?= $k['id']; ?>">

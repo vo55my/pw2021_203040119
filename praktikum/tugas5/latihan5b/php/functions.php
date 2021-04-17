@@ -20,7 +20,6 @@ function query($sql) {
 // fungsi untuk menambahkan data didalam database
 function tambah($data) {
     $conn = koneksi();
-
     $nama = htmlspecialchars($data['nama']);
     $alamat = htmlspecialchars($data['alamat']);
     $berdiri = htmlspecialchars($data['berdiri']);

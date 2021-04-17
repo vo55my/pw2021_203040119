@@ -20,7 +20,6 @@ function query($sql) {
 // fungsi untuk menambahkan data didalam database
 function tambah($data) {
     $conn = koneksi();
-
     $nama = htmlspecialchars($data["nama"]);
     $alamat = htmlspecialchars($data["alamat"]);
     $berdiri = htmlspecialchars($data["berdiri"]);
@@ -38,6 +37,7 @@ function tambah($data) {
 
 function hapus($id) {
     $conn = koneksi();
+    
     mysqli_query($conn, "DELETE FROM kampus WHERE id = $id");
 
     return mysqli_affected_rows($conn);
@@ -45,7 +45,6 @@ function hapus($id) {
 
 function ubah($data) {
     $conn = koneksi();
-
     $id = htmlspecialchars($data["id"]);
     $nama = htmlspecialchars($data["nama"]);
     $alamat = htmlspecialchars($data["alamat"]);

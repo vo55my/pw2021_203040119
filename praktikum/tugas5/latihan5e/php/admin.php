@@ -1,6 +1,7 @@
 <?php
 // Menghubungkan dengan file PHP lainnya
 require 'functions.php';
+
 // Melakukan Query
 if (isset($_GET["cari"])) {
     $keyword = $_GET['keyword'];
