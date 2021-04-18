@@ -63,11 +63,15 @@ if (isset($_POST['tambah'])) {
             </div>
             <br>
 
-        <label class="uk-form-label" for="form-horizontal-text">Logo Universitas :</label>
-            <div class="uk-form-controls">
-                <input placeholder="Logo" name="logo" id="logo" type="file" required value="<?= $k['logo']; ?>" class="uk-input uk-form-width-medium uk-form-small validate">
+    <label class="uk-form-label" for="form-horizontal-text">Logo Universitas :</label>
+        <div class="uk-form-controls">
+            <div uk-form-custom="target: true">
+                <input name="logo" id="logo" type="file" required>
+                <input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Pilih File" disabled>
             </div>
-            <br>
+            <button class="uk-button uk-button-primary uk-button-small">Upload</button>
+        </div>
+        <br>
     </fieldset>
         <button type="submit" name="tambah" class="uk-button uk-button-primary">Selesai</button>
         <button type="submit" class="uk-button uk-button-danger uk-link-reset">
@@ -75,5 +79,9 @@ if (isset($_POST['tambah'])) {
         </button>
 </form>
 </div>
+<script src="../uikit/js/uikit.min.js"></script>
+<script src="../uikit/js/uikit.js">
+    UIkit.formCustom(element, options);
+</script>
 </body>
 </html>

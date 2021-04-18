@@ -88,6 +88,7 @@ if (isset($_GET["cari"])) {
         <div class="input-field col s12 uk-animation-fade">
             <button type="submit" name="cari"><i class="material-icons prefix">search</i></button>
             <input type="text" name="keyword" class="autocomplete" autofocus>
+            <label for="keyword">Cari Universitas</label>
         </div>
     </form>
     <div class="add uk-animation-fade">
@@ -140,5 +141,6 @@ if (isset($_GET["cari"])) {
     </table>
 </div>    
 <div class="clear"></div>
+<script type="text/javascript" src="../materialize/js/materialize.js"></script>
 </body>
 </html>
