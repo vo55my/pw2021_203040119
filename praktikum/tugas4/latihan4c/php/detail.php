@@ -1,8 +1,8 @@
-<?php 
+<?php
 // Mengecek apakah ada id yang dikirimkan
 // Jika tidak maka akan dikembalikan ke halaman index.php
 if (!isset($_GET['id'])) {
-    header("location: index.php");
+    header("Location: ../index.php");
     exit;
 }
 
@@ -18,6 +18,7 @@ $kampus = query("SELECT * FROM kampus WHERE id = $id")[0];
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +47,7 @@ $kampus = query("SELECT * FROM kampus WHERE id = $id")[0];
             width: 400px;
             height: 400px;
         }
-        
+
         p {
             text-align: left;
             padding-left: 20px;
@@ -67,33 +68,35 @@ $kampus = query("SELECT * FROM kampus WHERE id = $id")[0];
         }
     </style>
 </head>
+
 <body>
-<div class="container uk-animation-fade">
-    <table class="radius bordered shadow centered">
-        <thead>
-            <tr>
-                <th>Logo</th>
-                <th>Keterangan</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="6"><img class="uk-preserve-width uk-animation-slide-left-small" src="../assets/img/<?= $kampus["logo"]; ?>"></td>
-            </tr>
-            <tr>
-                <td class="uk-animation-slide-right-small">
-                    <p>Nama : <?= $kampus["nama"]; ?></p>
-                    <p>Alamat : <?= $kampus["alamat"]; ?></p>
-                    <p>Didirikan : <?= $kampus["berdiri"]; ?></p>
-                    <p>Kota : <?= $kampus["kota"]; ?></p>
-                    <p>Situs Web : <?= $kampus["situs"]; ?></p>
-                    <p>Urutan : <strong><?= $kampus["urutan"]; ?></strong></p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <a href="index.php" class="waves-effect waves-light btn grey lighten-1 uk-link-reset">Kembali</a>
-</div>
-<div class="clear"></div>
+    <div class="container uk-animation-fade">
+        <table class="radius bordered shadow centered">
+            <thead>
+                <tr>
+                    <th>Logo</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="6"><img class="uk-preserve-width uk-animation-slide-left-small" src="../assets/img/<?= $kampus["logo"]; ?>"></td>
+                </tr>
+                <tr>
+                    <td class="uk-animation-slide-right-small">
+                        <p>Nama : <?= $kampus["nama"]; ?></p>
+                        <p>Alamat : <?= $kampus["alamat"]; ?></p>
+                        <p>Didirikan : <?= $kampus["berdiri"]; ?></p>
+                        <p>Kota : <?= $kampus["kota"]; ?></p>
+                        <p>Situs Web : <?= $kampus["situs"]; ?></p>
+                        <p>Urutan : <strong><?= $kampus["urutan"]; ?></strong></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="../index.php" class="waves-effect waves-light btn grey lighten-1 uk-link-reset">Kembali</a>
+    </div>
+    <div class="clear"></div>
 </body>
+
 </html>
