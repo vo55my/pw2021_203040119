@@ -92,35 +92,19 @@ if (isset($_POST['update'])) {
                             <label for="harga">Harga</label>
                             <input type="text" name="harga" required autocomplete="off" value="<?= $query['harga']; ?>">
                         </div>
+                        <div class="input-field">
+                            <label for="ukuran">Ukuran</label>
+                            <input type="text" name="ukuran" required autocomplete="off" value="<?= $query['ukuran']; ?>">
+                        </div>
                         <div class="file-field input-field">
-                            <input type="hidden" name="img_lama" value="<?= $query['img']; ?>">
                             <div class="btn-small waves-effect waves-dark red">
                                 <i class="material-icons">file_upload</i>
                                 <input type="file" name="img">
                             </div>
                             <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text" placeholder="Unggah Foto Kaos (PNG)" name="img" value="<?= $query['img']; ?>">
+                                <input class="file-path validate" type="text" name="img" value="<?= $query['img']; ?>">
                             </div>
                         </div>
-                        <div class="ukuran">
-                            <p>Ukuran</p><br>
-                            <label>
-                                <input type="checkbox" class="filled-in" name="ukuran[]" value="<?= $query['ukuran']; ?>">
-                                <span>S</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" class="filled-in" name="ukuran[]" value="<?= $query['ukuran']; ?>">
-                                <span>M</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" class="filled-in" name="ukuran[]" value="<?= $query['ukuran']; ?>">
-                                <span>L</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" class="filled-in" name="ukuran[]" value="<?= $query['ukuran']; ?>">
-                                <span>XL</span>
-                            </label>
-                        </div><br>
                         <div class="input-field">
                             <button type="submit" name="update" class="btn-small waves-effect waves-dark red">Update</button>
                             <button type="submit" class="btn-small waves-effect waves-dark red">

@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="tubes/css/materialize.min.css" media="screen,projection">
-  <title>Praktikum_203040119</title>
+  <link rel="shortcut icon" type="image/x-icon" href="tubes/assets/img/Slide/Profil.png">
+  <title>PW2021_203040119</title>
   <style>
     body {
       display: flex;
@@ -213,8 +214,23 @@
   </section>
 
   <!-- footer -->
-  <footer class="footer red darken-2 white-text center-align">
-    <p>Copyright © 2020 MyCloth Indonesia</p>
+  <footer class="page-footer red darken-2 white-text center-align">
+    <div class="container">
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links :</h5>
+        <ul>
+          <li><a class="white-text" href="#home">Home</a></li>
+          <li><a class="white-text" href="#profil">Profil</a></li>
+          <li><a class="white-text" href="#kuliah">Kuliah</a></li>
+          <li><a class="white-text" href="#praktikum">Praktikum</a></li>
+          <li><a class="white-text" href="#tubes">Tugas Besar</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="footer-copyright red darken-2">
+      <div class="container">Copyright © 2020 MyCloth Indonesia</div>
+    </div>
   </footer>
 
   <!-- javascript -->

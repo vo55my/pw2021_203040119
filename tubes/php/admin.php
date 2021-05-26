@@ -7,13 +7,13 @@ if (!isset($_SESSION['login'])) {
 
 require 'functions.php';
 
-$jumlahDataPerHalaman = 2;
-$jumlahData = count(query("SELECT * FROM katalog"));
-$jumlahHalaman = round($jumlahData / $jumlahDataPerHalaman);
+$jumlahKatalogPerHalaman = 2;
+$jumlahKatalog = count(query("SELECT * FROM katalog"));
+$jumlahHalaman = round($jumlahKatalog / $jumlahKatalogPerHalaman);
 $halamanAktif = (isset($_GET["halaman"])) ? $_GET["halaman"] : 1;
-$awalData = ($jumlahDataPerHalaman * $halamanAktif) - $jumlahDataPerHalaman;
+$awalKatalog = ($jumlahKatalogPerHalaman * $halamanAktif) - $jumlahKatalogPerHalaman;
 
-$query = query("SELECT * FROM katalog LIMIT $awalData, $jumlahDataPerHalaman");
+$query = query("SELECT * FROM katalog LIMIT $awalKatalog, $jumlahKatalogPerHalaman");
 
 if (isset($_POST['cari'])) {
     $query = cari($_POST['keyword']);
@@ -33,14 +33,19 @@ if (isset($_POST['cari'])) {
     <link rel="shortcut icon" type="image/x-icon" href="../assets/img/Slide/Profil.png">
     <title>MyCloth Admin</title>
     <style>
+        nav {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
         .nav-wrapper form {
             margin-top: 40px;
         }
 
         .container h2,
         thead tr,
-        td a,
-        h4 {
+        tbody td,
+        h4,
+        .pagination {
             margin-bottom: 40px;
             font-weight: 600;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
@@ -69,7 +74,7 @@ if (isset($_POST['cari'])) {
     </style>
 </head>
 
-<body id="home" class="scrollspy">
+<body id="home">
     <!-- navbar -->
     <div class="navbar-fixed">
         <nav class="black">
@@ -89,12 +94,11 @@ if (isset($_POST['cari'])) {
     <!-- sidenav -->
     <ul class="sidenav" id="mobile-nav">
         <li><a href="tambah.php"><i class="material-icons">add_box</i>Tambah</a></li>
-        <li><a href="#katalog">Katalog</a></li>
         <li><a href="logout.php"><i class="material-icons">exit_to_app</i>Logout</a></li>
     </ul>
 
     <!-- katalog -->
-    <div id="katalog" class="parallax-container scrollspy">
+    <div id="katalog" class="parallax-container">
         <div class="parallax">
             <img src="../assets/img/Slide/Parallax.png">
         </div>
@@ -118,12 +122,14 @@ if (isset($_POST['cari'])) {
                         <th>Katalog</th>
                         <th>Kode</th>
                         <th>Edisi</th>
+                        <th>Harga</th>
+                        <th>Ukuran</th>
                     </tr>
                 </thead>
                 <tbody tabindex="0">
                     <?php if (empty($query)) : ?>
                         <tr>
-                            <td colspan="3">
+                            <td colspan="5">
                                 <h4 class="center-align red-text text-darken-3">Katalog Tidak Ditemukan</h4>
                             </td>
                         </tr>
@@ -131,10 +137,12 @@ if (isset($_POST['cari'])) {
                         <?php foreach ($query as $query) : ?>
                             <tr class="hoverable" tabindex="0">
                                 <td>
-                                    <a href="detail.php?id=<?= $query['id'] ?>"><img width="300" class="responsive-img" src="../assets/img/Katalog/<?= $query['img']; ?>"></a>
+                                    <img width="300" class="responsive-img" src="../assets/img/Katalog/<?= $query['img']; ?>">
                                 </td>
-                                <td><a class="red-text text-darken-3" href="detail.php?id=<?= $query['id'] ?>"><?= $query['kode']; ?></a></td>
-                                <td><a class="red-text text-darken-3" href="detail.php?id=<?= $query['id'] ?>"><?= $query['edisi']; ?></a></td>
+                                <td class="red-text text-darken-3"><?= $query['kode']; ?></td>
+                                <td class="red-text text-darken-3"><?= $query['edisi']; ?></td>
+                                <td class="red-text text-darken-3"><?= $query['harga']; ?></td>
+                                <td class="red-text text-darken-3"><?= $query['ukuran']; ?></td>
                                 <td>
                                     <a href="update.php?id=<?= $query['id'] ?>" class="btn-floating btn-large waves-effect waves-light red darken-3"><i class="material-icons">create</i></a>
                                     <a href="hapus.php?id=<?= $query['id'] ?>" onclick="return confirm('Hapus Katalog Ini?')" class="btn-floating btn-large waves-effect waves-light red darken-3"><i class="material-icons">delete</i></a>
@@ -167,20 +175,8 @@ if (isset($_POST['cari'])) {
     </div>
 
     <!-- footer -->
-    <footer class="page-footer red darken-2 white-text center-align">
-        <div class="container">
-            <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links :</h5>
-                <ul>
-                    <li><a class="white-text" href="#home">Home</a></li>
-                    <li><a class="white-text" href="#katalog">Katalog</a></li>
-                </ul>
-            </div>
-        </div>
-        </div>
-        <div class="footer-copyright red darken-2">
-            <div class="container">Copyright © 2020 MyCloth Indonesia</div>
-        </div>
+    <footer class="footer red darken-2 white-text center-align">
+        <p>Copyright © 2020 MyCloth Indonesia</p>
     </footer>
 
     <div class="clear"></div>
@@ -191,22 +187,8 @@ if (isset($_POST['cari'])) {
         const sideNav = document.querySelectorAll('.sidenav');
         M.Sidenav.init(sideNav);
 
-
-        const slider = document.querySelectorAll('.slider');
-        M.Slider.init(slider, {
-            indicators: false,
-            height: 600,
-            transition: 600,
-            interval: 3000
-        });
-
         const parallax = document.querySelectorAll('.parallax');
         M.Parallax.init(parallax);
-
-        const scroll = document.querySelectorAll('.scrollspy');
-        M.ScrollSpy.init(scroll, {
-            scrollOffset: 40
-        });
     </script>
 </body>
 

@@ -52,14 +52,14 @@ $query = query("SELECT * FROM katalog WHERE id = $id");
   <div class="container">
     <table class="centered">
       <thead>
-        <tr>
+        <tr class="red-text text-darken-2">
           <th>Gambar</th>
           <th>Deskripsi</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td rowspan="3">
+          <td rowspan="2">
             <img class="responsive-img" width="600" src="../assets/img/Katalog/<?= $query['img']; ?>">
           </td>
         </tr>
@@ -68,7 +68,8 @@ $query = query("SELECT * FROM katalog WHERE id = $id");
             <p>Kode : <?= $query['kode']; ?></p>
             <p>Edisi : <?= $query['edisi']; ?></p>
             <p>Harga : Rp. <?= $query['harga']; ?></p>
-            <p>Ukuran : </p>
+            <p>Ukuran : <?= $query['ukuran']; ?></p>
+            <a href="member.php" class="waves-effect waves-light btn-small red darken-2">Kembali</a>
           </td>
         </tr>
       </tbody>

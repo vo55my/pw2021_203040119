@@ -7,13 +7,13 @@ if (!isset($_SESSION['login'])) {
 
 require 'functions.php';
 
-$jumlahDataPerHalaman = 2;
-$jumlahData = count(query("SELECT * FROM katalog"));
-$jumlahHalaman = round($jumlahData / $jumlahDataPerHalaman);
+$jumlahKatalogPerHalaman = 2;
+$jumlahKatalog = count(query("SELECT * FROM katalog"));
+$jumlahHalaman = round($jumlahKatalog / $jumlahKatalogPerHalaman);
 $halamanAktif = (isset($_GET["halaman"])) ? $_GET["halaman"] : 1;
-$awalData = ($jumlahDataPerHalaman * $halamanAktif) - $jumlahDataPerHalaman;
+$awalKatalog = ($jumlahKatalogPerHalaman * $halamanAktif) - $jumlahKatalogPerHalaman;
 
-$query = query("SELECT * FROM katalog LIMIT $awalData, $jumlahDataPerHalaman");
+$query = query("SELECT * FROM katalog LIMIT $awalKatalog, $jumlahKatalogPerHalaman");
 
 if (isset($_POST['cari'])) {
   $query = cari($_POST['keyword']);
@@ -33,6 +33,10 @@ if (isset($_POST['cari'])) {
   <link rel="shortcut icon" type="image/x-icon" href="../assets/img/Slide/Profil.png">
   <title>MyCloth Member</title>
   <style>
+    nav {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
     .nav-wrapper form {
       margin-top: 40px;
     }
@@ -40,7 +44,8 @@ if (isset($_POST['cari'])) {
     .container h2,
     thead tr,
     td a,
-    h4 {
+    h4,
+    .pagination {
       margin-bottom: 40px;
       font-weight: 600;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
@@ -69,15 +74,14 @@ if (isset($_POST['cari'])) {
   </style>
 </head>
 
-<body id="home" class="scrollspy">
+<body id="home">
   <!-- navbar -->
   <div class="navbar-fixed">
     <nav class="black">
       <div class="container">
         <div class="nav-wrapper">
           <img class="brand-logo" src="../assets/img/Slide/Profil.png">
-          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons large">menu</i></a>
-          <ul class="red-text text-darken-2 right hide-on-med-and-down">
+          <ul class="red-text text-darken-2 right">
             <li><a href="logout.php" class="hoverable">Logout<i class="material-icons right">exit_to_app</i></a></li>
           </ul>
         </div>
@@ -85,13 +89,8 @@ if (isset($_POST['cari'])) {
     </nav>
   </div>
 
-  <!-- sidenav -->
-  <ul class="sidenav" id="mobile-nav">
-    <li><a href="logout.php"><i class="material-icons">exit_to_app</i>Logout</a></li>
-  </ul>
-
   <!-- katalog -->
-  <div id="katalog" class="parallax-container scrollspy">
+  <div id="katalog" class="parallax-container">
     <div class="parallax">
       <img src="../assets/img/Slide/Parallax.png">
     </div>
@@ -160,19 +159,8 @@ if (isset($_POST['cari'])) {
   </div>
 
   <!-- footer -->
-  <footer class="page-footer red darken-2 white-text center-align">
-    <div class="container">
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links :</h5>
-        <ul>
-          <li><a class="white-text" href="#home">Home</a></li>
-        </ul>
-      </div>
-    </div>
-    </div>
-    <div class="footer-copyright red darken-2">
-      <div class="container">Copyright © 2020 MyCloth Indonesia</div>
-    </div>
+  <footer class="footer red darken-2 white-text center-align">
+    <p>Copyright © 2020 MyCloth Indonesia</p>
   </footer>
 
   <div class="clear"></div>
@@ -180,16 +168,8 @@ if (isset($_POST['cari'])) {
   <!-- javascript -->
   <script type="text/javascript" src="../js/materialize.min.js"></script>
   <script>
-    const sideNav = document.querySelectorAll('.sidenav');
-    M.Sidenav.init(sideNav);
-
     const parallax = document.querySelectorAll('.parallax');
     M.Parallax.init(parallax);
-
-    const scroll = document.querySelectorAll('.scrollspy');
-    M.ScrollSpy.init(scroll, {
-      scrollOffset: 40
-    });
   </script>
 </body>
 

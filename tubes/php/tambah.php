@@ -79,6 +79,11 @@ if (isset($_POST['tambah'])) {
                             <label for="harga">Harga</label>
                             <input type="text" name="harga" required autocomplete="off">
                         </div>
+                        <div class="input-field">
+                            <label for="ukuran">Ukuran</label>
+                            <input type="text" name="ukuran" required autocomplete="off">
+                        </div>
+
                         <div class="file-field input-field">
                             <div class="btn-small waves-effect waves-dark red">
                                 <i class="material-icons">file_upload</i>
@@ -88,25 +93,6 @@ if (isset($_POST['tambah'])) {
                                 <input class="file-path validate" type="text" name="img">
                             </div>
                         </div>
-                        <div class="ukuran">
-                            <p>Ukuran</p><br>
-                            <label>
-                                <input type="checkbox" class="filled-in" name="ukuran[]" value="S">
-                                <span>S</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" class="filled-in" name="ukuran[]" value="M">
-                                <span>M</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" class="filled-in" name="ukuran[]" value="L">
-                                <span>L</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" class="filled-in" name="ukuran[]" value="XL">
-                                <span>XL</span>
-                            </label>
-                        </div><br>
                         <div class="input-field">
                             <button type="submit" name="tambah" class="btn-small waves-effect waves-dark red">Tambah</button>
                             <button type="submit" class="btn-small waves-effect waves-dark red">

@@ -10,7 +10,6 @@ function query($query)
 
   $result = mysqli_query($conn, $query);
 
-  // jika hasilnya hanya satu data
   if (mysqli_num_rows($result) == 1) {
     return mysqli_fetch_assoc($result);
   }
@@ -32,7 +31,6 @@ function daftar($data)
   $password = mysqli_real_escape_string($conn, $data['password']);
   $confirm = mysqli_real_escape_string($conn, $data['confirm']);
 
-  // form tidak boleh kosong
   if (empty($nama) || empty($status) || empty($username) || empty($password) || empty($confirm)) {
     echo "<script>
             alert('Username/Password tidak boleh kosong');
@@ -41,7 +39,6 @@ function daftar($data)
     return false;
   }
 
-  // jika username sudah ada
   if (query("SELECT * FROM account WHERE username = '$username'")) {
     echo "<script>
             alert('Username sudah terdaftar');
@@ -50,7 +47,6 @@ function daftar($data)
     return false;
   }
 
-  // jika konfirmasi password tidak sesuai
   if ($password !== $confirm) {
     echo "<script>
             alert('Konfirmasi Password tidak sesuai');
@@ -59,7 +55,6 @@ function daftar($data)
     return false;
   }
 
-  // jika username lebih kecil dari 5 digit
   if (strlen($username) < 5) {
     echo "<script>
               alert('Username terlalu pendek');
@@ -68,7 +63,6 @@ function daftar($data)
     return false;
   }
 
-  // jika password lebih kecil dari 5 digit
   if (strlen($password) < 5) {
     echo "<script>
             alert('Password terlalu pendek');
@@ -77,10 +71,7 @@ function daftar($data)
     return false;
   }
 
-  // jika username dan password sesuai
-  // enkripsi password
   $password_baru = password_hash($password, PASSWORD_DEFAULT);
-  // insert ke tabel user
   $query = "INSERT INTO account VALUES (null, '$nama', '$status', '$username', '$password_baru')";
   mysqli_query($conn, $query) or die(mysqli_error($conn));
   return mysqli_affected_rows($conn);
@@ -94,12 +85,19 @@ function login($data)
   $password = htmlspecialchars($data['password']);
 
   // cek dulu username
-  if ($account = query("SELECT * FROM account WHERE username = '$username'")) {
+  if ($account = query("SELECT * FROM account WHERE username = '$username' AND status = 'admin'")) {
     // cek password
     if (password_verify($password, $account['password'])) {
       // set session
       $_SESSION['login'] = true;
       header("Location: admin.php");
+      exit;
+    }
+  } else if ($account = query("SELECT * FROM account WHERE username = '$username' AND status = 'member'")) {
+    if (password_verify($password, $account['password'])) {
+      // set session
+      $_SESSION['login'] = true;
+      header("Location: member.php");
       exit;
     }
   }
@@ -165,7 +163,7 @@ function upload()
     return false;
   }
 
-  move_uploaded_file($tmp_file, '/Katalog' . $nama_file);
+  move_uploaded_file($tmp_file, '../assets/img/Katalog/' . $nama_file);
 
   return $nama_file;
 }
@@ -177,13 +175,14 @@ function tambah($data)
   $kode = htmlspecialchars($data['kode']);
   $edisi = htmlspecialchars($data['edisi']);
   $harga = htmlspecialchars($data['harga']);
+  $ukuran = htmlspecialchars($data['ukuran']);
   $img = upload();
 
   if (!$img) {
     return false;
   }
 
-  $query = "INSERT INTO katalog VALUES (null, '$img', '$kode', '$edisi', '$harga');";
+  $query = "INSERT INTO katalog VALUES (null, '$img', '$kode', '$edisi', '$harga', '$ukuran');";
   mysqli_query($conn, $query) or die(mysqli_error($conn));
 
   return mysqli_affected_rows($conn);
@@ -197,17 +196,19 @@ function update($data)
   $kode = htmlspecialchars($data['kode']);
   $edisi = htmlspecialchars($data['edisi']);
   $harga = htmlspecialchars($data['harga']);
-  $img_lama = htmlspecialchars($data['img_lama']);
-
+  $ukuran = htmlspecialchars($data['ukuran']);
   $img = upload();
+
   if (!$img) {
+    return false;
   }
 
   $query = "UPDATE katalog SET
             img = '$img',
             kode = '$kode',
             edisi = '$edisi',
-            harga = '$harga' 
+            harga = '$harga', 
+            ukuran = '$ukuran'  
             WHERE id = $id";
 
   mysqli_query($conn, $query) or die(mysqli_error($conn));
@@ -218,6 +219,9 @@ function update($data)
 function hapus($id)
 {
   $conn = koneksi();
+
+  $query = query("SELECT * FROM katalog WHERE id = $id");
+  unlink('../assets/img/Katalog/' . $query['img']);
 
   mysqli_query($conn, "DELETE FROM katalog WHERE id = $id") or die(mysqli_error($conn));
 
