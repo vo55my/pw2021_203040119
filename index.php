@@ -204,9 +204,19 @@
     <div class="container">
       <div class="row">
         <h2 class="center red-text text-darken-2">Tugas Besar</h2>
+        <p class="center">Klik Tab untuk melihat akun yang terdaftar</p>
         <ul class="collapsible">
           <li>
             <div class="collapsible-header"><a class="black-text" href="tubes">Tugas Besar</a></div>
+            <div class="collapsible-body">
+              <p>Admin</p>
+              <p>Username : admin</p>
+              <p>Password : admin</p>
+              <br>
+              <p>Member</p>
+              <p>Username : member</p>
+              <p>Password : member</p>
+            </div>
           </li>
         </ul>
       </div>
