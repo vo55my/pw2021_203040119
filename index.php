@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="tubes/css/materialize.min.css" media="screen,projection">
-  <link rel="shortcut icon" type="image/x-icon" href="tubes/assets/img/Slide/Profil.png">
+  <link rel="shortcut icon" type="image/x-icon" href="tubes/assets/img/Slide/Logo.png">
   <title>PW2021_203040119</title>
   <style>
     body {
@@ -61,7 +61,7 @@
     <nav class="black">
       <div class="container">
         <div class="nav-wrapper">
-          <img class="brand-logo" src="tubes/assets/img/Slide/Profil.png">
+          <img class="brand-logo" src="tubes/assets/img/Slide/Logo.png">
           <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons large">menu</i></a>
           <ul class="red-text text-darken-2 right hide-on-med-and-down">
             <li><a href="#home" class="hoverable">Home</a></li>

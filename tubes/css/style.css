@@ -1,4 +1,3 @@
-/* index.php */
 body {
   display: flex;
   min-height: 100vh;
@@ -70,7 +69,6 @@ section {
   padding: 1px 0;
 }
 
-/* daftar.php - login.php - tambah.php - update.php */
 .input-field label {
   color: maroon;
 }

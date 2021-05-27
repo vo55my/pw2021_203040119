@@ -23,12 +23,12 @@ $query = query("SELECT * FROM katalog WHERE id = $id");
 if (isset($_POST['update'])) {
     if (update($_POST) > 0) {
         echo "<script>
-            alert('Katalog berhasil diubah')
+            alert('Katalog berhasil diupdate')
             document.location.href = 'admin.php';
           </script>";
     } else {
         echo "<script>
-            alert('Katalog gagal diubah')
+            alert('Katalog gagal diupdate')
             document.location.href = 'admin.php';
           </script>";
     }
@@ -45,7 +45,7 @@ if (isset($_POST['update'])) {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/Slide/Profil.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/Slide/Logo.png">
     <title>MyCloth Update</title>
     <style>
         .ukuran p {
@@ -64,7 +64,7 @@ if (isset($_POST['update'])) {
         <nav class="black">
             <div class="container">
                 <div class="nav-wrapper">
-                    <img class="brand-logo" src="../assets/img/Slide/Profil.png">
+                    <img class="brand-logo" src="../assets/img/Slide/Logo.png">
                 </div>
             </div>
         </nav>

@@ -22,7 +22,7 @@ $query = query("SELECT * FROM katalog WHERE id = $id");
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="shortcut icon" type="image/x-icon" href="../assets/img/Slide/Profil.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/img/Slide/logo.png">
   <title>MyCloth Detail</title>
   <style>
     table {

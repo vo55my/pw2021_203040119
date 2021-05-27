@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Slide/Profil.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Slide/Logo.png">
     <title>MyCloth Indonesia</title>
     <style>
         .caption a {
@@ -23,7 +23,7 @@
         <nav class="black">
             <div class="container">
                 <div class="nav-wrapper">
-                    <img class="brand-logo" src="assets/img/Slide/Profil.png">
+                    <img class="brand-logo" src="assets/img/Slide/Logo.png">
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons large">menu</i></a>
                     <ul class="red-text text-darken-2 right hide-on-med-and-down">
                         <li><a href="php/login.php" class="hoverable">Login</a></li>
@@ -50,7 +50,15 @@
     <div class="slider">
         <ul class="slides">
             <li>
-                <img src="assets/img/Slide/2.png">
+                <img src="assets/img/Slide/Black.png">
+                <div class="caption center-align">
+                    <h2 class="red-text text-darken-3">Welcome</h2>
+                    <h5 class="red-text text-darken-3">- MyCloth Indonesia -</h5>
+                    <a href="#about" class="btn waves-effect waves-light pulse red darken-2 hoverable">Get Started</a>
+                </div>
+            </li>
+            <li>
+                <img src="assets/img/Slide/White.png">
                 <div class="caption center-align">
                     <h2 class="red-text text-darken-3">Welcome</h2>
                     <h5 class="red-text text-darken-3">- MyCloth Indonesia -</h5>
@@ -66,7 +74,7 @@
             <div class="row">
                 <h3 class="center red-text text-darken-3">About Us</h3>
                 <div class="col m4 s4 right-align">
-                    <img src="assets/img/Slide/Profil.png">
+                    <img src="assets/img/Slide/Logo.png">
                 </div>
                 <div class="col m6 s8 left-align">
                     <blockquote>

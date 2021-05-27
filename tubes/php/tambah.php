@@ -33,7 +33,7 @@ if (isset($_POST['tambah'])) {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/Slide/Profil.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/Slide/Logo.png">
     <title>MyCloth Tambah</title>
     <style>
         .ukuran p {
@@ -52,7 +52,7 @@ if (isset($_POST['tambah'])) {
         <nav class="black">
             <div class="container">
                 <div class="nav-wrapper">
-                    <img class="brand-logo" src="../assets/img/Slide/Profil.png">
+                    <img class="brand-logo" src="../assets/img/Slide/Logo.png">
                 </div>
             </div>
         </nav>
