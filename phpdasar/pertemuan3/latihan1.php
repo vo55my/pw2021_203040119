@@ -6,9 +6,7 @@ https://github.com/vo55my/pw2021_203040119.git
 Pertemuan 3 - 19 Februari 2021
 Mempelajari tentang Pengulangan dan Pengkondisian dalam PHP
 */
-?>
 
-<?php
 // Pengulangan
 /* 
 for
@@ -32,4 +30,3 @@ foreach : pengulangan khusus array
 //     echo "Hello World <br>";
 // $i++;
 // } while( $i < 5 )
-?>

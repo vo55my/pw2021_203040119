@@ -6,9 +6,7 @@ https://github.com/vo55my/pw2021_203040119.git
 Pertemuan 3 - 19 Februari 2021
 Mempelajari tentang Pengulangan dan Pengkondisian dalam PHP
 */
-?>
 
-<?php 
 // Pengkondisian / Percabangan
 /*
 if else
@@ -45,4 +43,3 @@ switch ($nama_hari)
     case "Sunday" : echo "Hari Libur";
                         break;
 */
-?>

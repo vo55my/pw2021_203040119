@@ -6,9 +6,7 @@ https://github.com/vo55my/pw2021_203040119.git
 Pertemuan 10 - 23 April 2021
 Mempelajari Koneksi DB dan Insert Data
 */
-?>
 
-<?php
 // koneksi ke database
 require 'functions.php';
 // tampung ke variabel mahasiswa

@@ -6,17 +6,15 @@ https://github.com/vo55my/pw2021_203040119.git
 Pertemuan 5 - 5 Maret 2021
 Mempelajari Array dalam PHP
 */
-?>
 
-<?php 
 // pengulangan pada array
 // for / foreach
-$angka = [1,2,3,4,5,6,7];
-
+$angka = [1, 2, 3, 4, 5, 6, 7];
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Latihan 2</title>
     <style>
@@ -29,29 +27,34 @@ $angka = [1,2,3,4,5,6,7];
             margin: 3px;
             float: left;
         }
-        .clear { clear: both; }
+
+        .clear {
+            clear: both;
+        }
     </style>
 </head>
+
 <body>
 
-<!-- for -->
-<?php for( $i = 0; $i < count($angka); $i++ ) { ?>
-    <div class="kotak"><?php echo $angka[$i]; ?></div>
-<?php } ?>
+    <!-- for -->
+    <?php for ($i = 0; $i < count($angka); $i++) { ?>
+        <div class="kotak"><?php echo $angka[$i]; ?></div>
+    <?php } ?>
 
-<div class="clear"></div>
+    <div class="clear"></div>
 
-<!-- foreach -->
-<?php foreach( $angka as $a ) { ?>
-    <div class="kotak"><?php echo $a; ?></div>
-<?php } ?>
+    <!-- foreach -->
+    <?php foreach ($angka as $a) { ?>
+        <div class="kotak"><?php echo $a; ?></div>
+    <?php } ?>
 
-<div class="clear"></div>
+    <div class="clear"></div>
 
-<!-- foreach lebih simple -->
-<?php foreach( $angka as $a ) : ?>
-    <div class="kotak"><?= $a; ?></div>
-<?php endforeach; ?>
+    <!-- foreach lebih simple -->
+    <?php foreach ($angka as $a) : ?>
+        <div class="kotak"><?= $a; ?></div>
+    <?php endforeach; ?>
 
 </body>
+
 </html>

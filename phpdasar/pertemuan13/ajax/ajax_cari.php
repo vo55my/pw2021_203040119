@@ -6,9 +6,7 @@ https://github.com/vo55my/pw2021_203040119.git
 Pertemuan 13 - 14 Mei 2021
 Mempelajari Ajax Live Search dan Upload Gambar
 */
-?>
 
-<?php
 require '../functions.php';
 $mahasiswa = cari($_GET['keyword']);
 ?>

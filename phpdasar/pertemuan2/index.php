@@ -6,9 +6,7 @@ https://github.com/vo55my/pw2021_203040119.git
 Pertemuan 2 - 12 Februari 2021
 Mempelajari tentang Syntax PHP Dasar
 */
-?>
 
-<?php
 // Pertemuan 2 - PHP Dasar
 // Sintaks PHP
 
@@ -90,7 +88,6 @@ echo $x * $y;
 // $x = 30;
 // var_dump($x < 20 && $x % 2 == 0);
 // var_dump($x < 20 || $x % 2 == 0);
-
 ?>
 
 <!DOCTYPE html>

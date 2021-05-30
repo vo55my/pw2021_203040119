@@ -6,9 +6,7 @@ https://github.com/vo55my/pw2021_203040119.git
 Pertemuan 12 - 7 Mei 2021
 Mempelajari Login dan Registrasi
 */
-?>
 
-<?php
 function koneksi()
 {
   return mysqli_connect('localhost', 'root', '', 'phpdasar');
@@ -184,5 +182,3 @@ function registrasi($data)
   mysqli_query($conn, $query) or die(mysqli_error($conn));
   return mysqli_affected_rows($conn);
 }
-?>
-<!-- selesai -->

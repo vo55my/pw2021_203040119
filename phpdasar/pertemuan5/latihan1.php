@@ -6,9 +6,7 @@ https://github.com/vo55my/pw2021_203040119.git
 Pertemuan 5 - 5 Maret 2021
 Mempelajari Array dalam PHP
 */
-?>
-
-<?php 
+ 
 // array
 // variabel yang dapat memiliki banyak nilai
 // elemen pada array boleh memiliki tipe data yang berbeda
@@ -41,4 +39,3 @@ $hari[] = "Kamis";
 $hari[] = "Jumat";
 echo "<br>";
 var_dump($hari);
-?>

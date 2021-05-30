@@ -6,9 +6,7 @@ https://github.com/vo55my/pw2021_203040119.git
 Pertemuan 4 - 26 Februari 2021
 Mempelajari tentang Date dan Function dalam PHP
 */
-?>
 
-<?php
     // Date
     // Untuk menampilkan tanggal dengan format tertentu
     // echo date("l, d-M-Y");
@@ -31,4 +29,3 @@ Mempelajari tentang Date dan Function dalam PHP
     
     // strtotime
     // echo date ("l", strtotime("25 Mar 2002"));
-?>

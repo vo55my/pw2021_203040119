@@ -6,9 +6,7 @@ https://github.com/vo55my/pw2021_203040119.git
 Pertemuan 12 - 7 Mei 2021
 Mempelajari Login dan Registrasi
 */
-?>
 
-<?php
 session_start();
 if (isset($_SESSION['login'])) {
   header("Location: index.php");

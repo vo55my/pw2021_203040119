@@ -6,9 +6,7 @@ https://github.com/vo55my/pw2021_203040119.git
 Pertemuan 11 - 30 April 2021
 Mempelajari Delete, Update, Searching Data
 */
-?>
 
-<?php
 function koneksi()
 {
   return mysqli_connect('localhost', 'root', '', 'phpdasar');
@@ -98,5 +96,3 @@ function cari($keyword)
   }
   return $rows;
 }
-?>
-<!-- selesai -->

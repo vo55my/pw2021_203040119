@@ -6,9 +6,7 @@ https://github.com/vo55my/pw2021_203040119.git
 Pertemuan 11 - 30 April 2021
 Mempelajari Delete, Update, Searching Data
 */
-?>
 
-<?php
 require 'functions.php';
 
 // jika tidak ada id di url
@@ -31,5 +29,3 @@ if (hapus($id) > 0) {
           document.location.href = 'index.php';
         </script>";
 }
-?>
-<!-- selesai -->

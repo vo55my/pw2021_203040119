@@ -6,9 +6,7 @@ https://github.com/vo55my/pw2021_203040119.git
 Pertemuan 11 - 30 April 2021
 Mempelajari Delete, Update, Searching Data
 */
-?>
 
-<?php
 // koneksi ke database
 require 'functions.php';
 // tampung ke variabel mahasiswa
