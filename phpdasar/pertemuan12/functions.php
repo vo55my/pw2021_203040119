@@ -101,6 +101,7 @@ function login($data)
 {
   $conn = koneksi();
 
+  $id = $data['id'];
   $username = htmlspecialchars($data['username']);
   $password = htmlspecialchars($data['password']);
 
@@ -110,6 +111,13 @@ function login($data)
     if (password_verify($password, $user['password'])) {
       // set session
       $_SESSION['login'] = true;
+
+      // cek cookies
+      if (isset($_POST['remember'])) {
+        // buat cookies
+        setcookie('id', $id['id'], time() + 60);
+        setcookie('key', hash('sha256', $username['username']), time() + 60);
+      }
 
       header("Location: index.php");
       exit;
