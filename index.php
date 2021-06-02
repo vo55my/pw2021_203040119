@@ -141,9 +141,6 @@
         <div class="col s12 m6">
           <ul class="collapsible">
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pertemuan8">Pertemuan 8</a></div>
-            </li>
-            <li>
               <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pertemuan9">Pertemuan 9</a></div>
             </li>
             <li>
@@ -157,6 +154,9 @@
             </li>
             <li>
               <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pertemuan13">Pertemuan 13</a></div>
+            </li>
+            <li>
+              <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pagination">Pagination</a></div>
             </li>
           </ul>
         </div>
