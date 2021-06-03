@@ -85,7 +85,7 @@ function login($data)
   $password = htmlspecialchars($data['password']);
 
   // cek dulu username
-  if ($account = query("SELECT * FROM account WHERE username = '$username' AND status = 'admin'")) {
+  if ($account = query("SELECT * FROM account WHERE username = '$username' AND status = 'Admin'")) {
     // cek password
     if (password_verify($password, $account['password'])) {
       // set session
@@ -93,7 +93,7 @@ function login($data)
       header("Location: admin.php");
       exit;
     }
-  } else if ($account = query("SELECT * FROM account WHERE username = '$username' AND status = 'member'")) {
+  } else if ($account = query("SELECT * FROM account WHERE username = '$username' AND status = 'Member'")) {
     if (password_verify($password, $account['password'])) {
       // set session
       $_SESSION['login'] = true;

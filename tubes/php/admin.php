@@ -122,8 +122,6 @@ if (isset($_POST['cari'])) {
                         <th>Katalog</th>
                         <th>Kode</th>
                         <th>Edisi</th>
-                        <th>Harga</th>
-                        <th>Ukuran</th>
                     </tr>
                 </thead>
                 <tbody tabindex="0">
@@ -139,10 +137,8 @@ if (isset($_POST['cari'])) {
                                 <td>
                                     <img width="300" class="responsive-img" src="../assets/img/Katalog/<?= $query['img']; ?>">
                                 </td>
-                                <td class="red-text text-darken-3"><?= $query['kode']; ?></td>
-                                <td class="red-text text-darken-3"><?= $query['edisi']; ?></td>
-                                <td class="red-text text-darken-3"><?= $query['harga']; ?></td>
-                                <td class="red-text text-darken-3"><?= $query['ukuran']; ?></td>
+                                <td><a class="red-text text-darken-3" href="detail1.php?id=<?= $query['id'] ?>"><?= $query['kode']; ?></a></td>
+                                <td><a class="red-text text-darken-3" href="detail1.php?id=<?= $query['id'] ?>"><?= $query['edisi']; ?></a></td>
                                 <td>
                                     <a href="update.php?id=<?= $query['id'] ?>" class="btn-floating btn-large waves-effect waves-light red darken-3"><i class="material-icons">create</i></a>
                                     <a href="hapus.php?id=<?= $query['id'] ?>" onclick="return confirm('Hapus Katalog Ini?')" class="btn-floating btn-large waves-effect waves-light red darken-3"><i class="material-icons">delete</i></a>

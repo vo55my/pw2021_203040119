@@ -42,7 +42,7 @@ $query = query("SELECT * FROM katalog WHERE id = $id");
     <nav class="black">
       <div class="container">
         <div class="nav-wrapper">
-          <img class="brand-logo" src="../assets/img/Slide/Profil.png">
+          <img class="brand-logo" src="../assets/img/Slide/Logo.png">
         </div>
       </div>
     </nav>
@@ -69,7 +69,7 @@ $query = query("SELECT * FROM katalog WHERE id = $id");
             <p>Edisi : <?= $query['edisi']; ?></p>
             <p>Harga : Rp. <?= $query['harga']; ?></p>
             <p>Ukuran : <?= $query['ukuran']; ?></p>
-            <a href="member.php" class="waves-effect waves-light btn-small red darken-2">Kembali</a>
+            <a href="admin.php" class="waves-effect waves-light btn-small red darken-2">Kembali</a>
           </td>
         </tr>
       </tbody>

@@ -21,6 +21,12 @@ if (isset($_POST['login'])) {
   <link rel="stylesheet" href="../css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="../assets/img/Slide/Logo.png">
   <title>MyCloth Login</title>
+  <style>
+    form {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
 
 <body>

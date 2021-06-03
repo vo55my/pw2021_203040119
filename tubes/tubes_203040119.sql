@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2021 at 08:06 AM
+-- Generation Time: Jun 03, 2021 at 03:35 PM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.4.12
 
@@ -40,8 +40,8 @@ CREATE TABLE `account` (
 --
 
 INSERT INTO `account` (`id`, `nama`, `status`, `username`, `password`) VALUES
-(1, 'Dhaifullah Hilmy', 'Admin', 'admin', '$2y$10$/pZjvLQz1Hj3SbyIjmg77uhenJV/Weo6PoPwQa7rDB6FeaJaQkQQu'),
-(2, 'Dinda Rahmawati', 'Member', 'member', '$2y$10$JrP9DUoxFtX4hTCZySaMYOlcVi3F.WOJLWyFU1qGkD.7/Iy9cSTzS');
+(8, 'Dhaifullah Hilmy', 'Admin', 'hilmy', '$2y$10$JhzaIn8Jcc3lfSYbNWB04uIKM.VtTrJqINAY9xBkoc/KYKquFY2M2'),
+(9, 'Dinda Rahmawati', 'Member', 'dinda', '$2y$10$bmVW3JzBaVqo0PnAEvfk9e1gIdPK5AnC.1eBDFjnyQFHBook5H4/m');
 
 -- --------------------------------------------------------
 
@@ -102,7 +102,7 @@ ALTER TABLE `katalog`
 -- AUTO_INCREMENT for table `account`
 --
 ALTER TABLE `account`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `katalog`

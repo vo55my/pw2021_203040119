@@ -129,8 +129,8 @@ if (isset($_POST['cari'])) {
                 <td>
                   <a href="detail.php?id=<?= $query['id'] ?>"><img width="300" class="responsive-img" src="../assets/img/Katalog/<?= $query['img']; ?>"></a>
                 </td>
-                <td><a class="red-text text-darken-3" href="detail.php?id=<?= $query['id'] ?>"><?= $query['kode']; ?></a></td>
-                <td><a class="red-text text-darken-3" href="detail.php?id=<?= $query['id'] ?>"><?= $query['edisi']; ?></a></td>
+                <td><a class="red-text text-darken-3" href="detail2.php?id=<?= $query['id'] ?>"><?= $query['kode']; ?></a></td>
+                <td><a class="red-text text-darken-3" href="detail2.php?id=<?= $query['id'] ?>"><?= $query['edisi']; ?></a></td>
               </tr>
         </tbody>
       <?php endforeach; ?>
