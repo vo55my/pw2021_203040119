@@ -2,7 +2,7 @@
 // function untuk melakukan koneksi ke database
 function koneksi() {
     $conn = mysqli_connect("localhost", "root", "");
-    mysqli_select_db($conn, "pw_tubes_203040119");
+    mysqli_select_db($conn, "praktikum_203040119");
     return $conn;
 }
 
@@ -92,4 +92,3 @@ function registrasi($data) {
 
     return mysqli_affected_rows($conn);
 }
-?>

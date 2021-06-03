@@ -9,7 +9,7 @@ Mempelajari Koneksi DB dan Insert Data
 
 function koneksi()
 {
-  return mysqli_connect('localhost', 'root', '', 'phpdasar');
+  return mysqli_connect('localhost', 'root', '', 'kuliah_203040119');
 }
 
 function query($query)

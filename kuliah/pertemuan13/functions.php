@@ -9,7 +9,7 @@ Mempelajari Ajax Live Search dan Upload Gambar
 
 function koneksi()
 {
-  return mysqli_connect('localhost', 'root', '', 'phpdasar');
+  return mysqli_connect('localhost', 'root', '', 'kuliah_203040119');
 }
 
 function query($query)

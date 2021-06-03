@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2021 at 06:20 PM
+-- Generation Time: Jun 03, 2021 at 08:06 AM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.4.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_mycloth`
+-- Database: `tubes_203040119`
 --
 
 -- --------------------------------------------------------
@@ -40,8 +40,8 @@ CREATE TABLE `account` (
 --
 
 INSERT INTO `account` (`id`, `nama`, `status`, `username`, `password`) VALUES
-(3, 'Dhaifullah Hilmy', 'Admin', 'hilmy', '$2y$10$IiHn5dKn5UHH8f8UUVaHHO5eGss3oLg0cXZgUsYl4DKiAxkcN2oEy'),
-(4, 'Dinda Rahmawati', 'Member', 'dinda', '$2y$10$dbi0d4UrsWLVg8iTQSTRkeMxBWirMKLassXWckSkzEZqMl4BlK7iG');
+(1, 'Dhaifullah Hilmy', 'Admin', 'admin', '$2y$10$/pZjvLQz1Hj3SbyIjmg77uhenJV/Weo6PoPwQa7rDB6FeaJaQkQQu'),
+(2, 'Dinda Rahmawati', 'Member', 'member', '$2y$10$JrP9DUoxFtX4hTCZySaMYOlcVi3F.WOJLWyFU1qGkD.7/Iy9cSTzS');
 
 -- --------------------------------------------------------
 
@@ -102,7 +102,7 @@ ALTER TABLE `katalog`
 -- AUTO_INCREMENT for table `account`
 --
 ALTER TABLE `account`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `katalog`

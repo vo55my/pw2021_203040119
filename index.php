@@ -117,46 +117,71 @@
       <div class="row">
         <h2 class="center red-text text-darken-2">Tugas Kuliah</h2>
         <div class="col s12 m6">
-          <ul class="collapsible">
+          <ul class="collapsible popout">
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pertemuan2">Pertemuan 2</a></div>
+              <div class="collapsible-header hoverable">Pertemuan 2</div>
+              <div class="collapsible-body hoverable">Index<a href="kuliah/pertemuan2/index.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pertemuan3">Pertemuan 3</a></div>
+              <div class="collapsible-header hoverable">Pertemuan 3</div>
+              <div class="collapsible-body hoverable">Latihan<a href="kuliah/pertemuan3/latihan.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 1<a href="kuliah/pertemuan3/latihan1.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 2<a href="kuliah/pertemuan3/latihan2.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pertemuan4">Pertemuan 4</a></div>
+              <div class="collapsible-header hoverable">Pertemuan 4</div>
+              <div class="collapsible-body hoverable">Date<a href="kuliah/pertemuan4/date.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Function<a href="kuliah/pertemuan4/function.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pertemuan5">Pertemuan 5</a></div>
+              <div class="collapsible-header hoverable">Pertemuan 5</div>
+              <div class="collapsible-body hoverable">Latihan 1<a href="kuliah/pertemuan5/latihan1.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 2<a href="kuliah/pertemuan5/latihan2.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 3<a href="kuliah/pertemuan5/latihan3.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pertemuan6">Pertemuan 6</a></div>
+              <div class="collapsible-header hoverable">Pertemuan 6</div>
+              <div class="collapsible-body hoverable">Latihan 1<a href="kuliah/pertemuan6/latihan1.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 2<a href="kuliah/pertemuan6/latihan2.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pertemuan7">Pertemuan 7</a></div>
+              <div class="collapsible-header hoverable">Pertemuan 7</div>
+              <div class="collapsible-body hoverable">Latihan Login<a href="kuliah/pertemuan7/login/login.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 1<a href="kuliah/pertemuan7/latihan1.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 2<a href="kuliah/pertemuan5/latihan2.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 3<a href="kuliah/pertemuan5/latihan3.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 4<a href="kuliah/pertemuan5/latihan4.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
           </ul>
         </div>
         <div class="col s12 m6">
-          <ul class="collapsible">
+          <ul class="collapsible popout">
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pertemuan9">Pertemuan 9</a></div>
+              <div class="collapsible-header hoverable">Pertemuan 9</div>
+              <div class="collapsible-body hoverable">Index 1<a href="kuliah/pertemuan9/index.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Index 2<a href="kuliah/pertemuan9/index2.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pertemuan10">Pertemuan 10</a></div>
+              <div class="collapsible-header hoverable">Pertemuan 10</div>
+              <div class="collapsible-body hoverable">Latihan 1<a href="kuliah/pertemuan10/latihan1.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 2<a href="kuliah/pertemuan10/latihan2.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 3<a href="kuliah/pertemuan10/latihan3.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pertemuan11">Pertemuan 11</a></div>
+              <div class="collapsible-header hoverable">Pertemuan 11</div>
+              <div class="collapsible-body hoverable">Index<a href="kuliah/pertemuan11/index.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pertemuan12">Pertemuan 12</a></div>
+              <div class="collapsible-header hoverable">Pertemuan 12</div>
+              <div class="collapsible-body hoverable">Index<a href="kuliah/pertemuan12/index.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pertemuan13">Pertemuan 13</a></div>
+              <div class="collapsible-header hoverable">Pertemuan 13</div>
+              <div class="collapsible-body hoverable">Index<a href="kuliah/pertemuan13/index.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="phpdasar/pagination">Pagination</a></div>
+              <div class="collapsible-header hoverable">Pagination</div>
+              <div class="collapsible-body hoverable">Index<a href="kuliah/pagination/index.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
           </ul>
         </div>
@@ -170,28 +195,52 @@
       <div class="row">
         <h2 class="center red-text text-darken-2">Tugas Praktikum</h2>
         <div class="col s12 m6">
-          <ul class="collapsible">
+          <ul class="collapsible popout">
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="praktikum/tugas1">Tugas 1</a></div>
+              <div class="collapsible-header hoverable">Tugas 1</div>
+              <div class="collapsible-body hoverable">Latihan 1a<a href="praktikum/tugas1/Latihan1a.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 1b<a href="praktikum/tugas1/Latihan1b.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 1c<a href="praktikum/tugas1/Latihan1c.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Tugas 1<a href="praktikum/tugas1/Tugas1.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="praktikum/tugas2">Tugas 2</a></div>
+              <div class="collapsible-header hoverable">Tugas 2</div>
+              <div class="collapsible-body hoverable">Latihan 2a<a href="praktikum/tugas2/latihan2a.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 2b<a href="praktikum/tugas2/latihan2b.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 2c<a href="praktikum/tugas2/latihan2c.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 2d<a href="praktikum/tugas2/latihan2d.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="praktikum/tugas3">Tugas 3</a></div>
+              <div class="collapsible-header hoverable">Tugas 3</div>
+              <div class="collapsible-body hoverable">Latihan 3a<a href="praktikum/tugas3/latihan3a.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 3b<a href="praktikum/tugas3/latihan3b.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 3c<a href="praktikum/tugas3/latihan3c.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 3d<a href="praktikum/tugas3/latihan3d.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 3e<a href="praktikum/tugas3/latihan3e/index.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
           </ul>
         </div>
         <div class="col s12 m6">
           <ul class="collapsible">
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="praktikum/tugas4">Tugas 4</a></div>
+              <div class="collapsible-header hoverable">Tugas 4</div>
+              <div class="collapsible-body hoverable">Latihan 4a<a href="praktikum/tugas4/latihan4a/index.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 4b<a href="praktikum/tugas4/latihan4b/index.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 4c<a href="praktikum/tugas4/latihan4c/index.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="praktikum/tugas5">Tugas 5</a></div>
+              <div class="collapsible-header hoverable">Tugas 5</div>
+              <div class="collapsible-body hoverable">Latihan 5a<a href="praktikum/tugas5/latihan5a/index.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 5b<a href="praktikum/tugas5/latihan5b/index.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 5c<a href="praktikum/tugas5/latihan5c/index.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 5d<a href="praktikum/tugas5/latihan5d/index.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 5e<a href="praktikum/tugas5/latihan5e/index.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
             <li>
-              <div class="collapsible-header hoverable"><a class="black-text" href="praktikum/tugas6">Tugas 6</a></div>
+              <div class="collapsible-header hoverable">Tugas 6</div>
+              <div class="collapsible-body hoverable">Latihan 6a<a href="praktikum/tugas6/latihan6a/index.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 6b<a href="praktikum/tugas6/latihan6b/index.php"><i class="material-icons right red-text">send</i></a></div>
+              <div class="collapsible-body hoverable">Latihan 6c<a href="praktikum/tugas6/latihan6c/index.php"><i class="material-icons right red-text">send</i></a></div>
             </li>
           </ul>
         </div>
@@ -204,17 +253,18 @@
     <div class="container">
       <div class="row">
         <h2 class="center red-text text-darken-2">Tugas Besar</h2>
-        <p class="center">Klik Tab untuk melihat akun yang terdaftar</p>
+        <p class="center">Klik untuk melihat akun yang terdaftar</p>
         <ul class="collapsible">
           <li>
-            <div class="collapsible-header"><a class="black-text" href="tubes">Tugas Besar</a></div>
+            <div class="collapsible-header">Tugas Besar</div>
+            <div class="collapsible-body hoverable">MyCloth Indonesia<a href="tubes/index.php"><i class="material-icons right red-text">send</i></a></div>
             <div class="collapsible-body">
               <p>Admin</p>
-              <p>Username : admin</p>
+              <p>Username : hilmy</p>
               <p>Password : admin</p>
               <br>
               <p>Member</p>
-              <p>Username : member</p>
+              <p>Username : dinda</p>
               <p>Password : member</p>
             </div>
           </li>

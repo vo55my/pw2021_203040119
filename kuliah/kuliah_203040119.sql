@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2021 at 06:21 PM
+-- Generation Time: Jun 03, 2021 at 08:05 AM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.4.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `phpdasar`
+-- Database: `kuliah_203040119`
 --
 
 -- --------------------------------------------------------
@@ -41,8 +41,12 @@ CREATE TABLE `mahasiswa` (
 --
 
 INSERT INTO `mahasiswa` (`id`, `nama`, `nrp`, `email`, `jurusan`, `gambar`) VALUES
-(1, 'Dhaifullah Hilmy', '203040119', '203040119@mail.unpas.ac.id', 'Teknik Informatika', 'hilmy.jpg'),
-(2, 'Dinda Rahmawati', '204030118', '204030118@mail.unpas.ac.id', 'Farmasi', 'hilmy.jpg');
+(1, 'Dhaifullah Hilmy', '203040119', '203040119@mail.unpas.ac.id', 'Teknik Informatika', '60b4dddbc55c0.png'),
+(14, 'Chris Redfield', '193040123', '193040123@mail.unpas.ac.id', 'Teknik Industri', '60b4dd4ca181b.jpg'),
+(15, 'Jill Valentine', '193040456', '193040456@mail.unpas.ac.id', 'Teknologi Pangan', '60b4dd95af8be.jpg'),
+(16, 'Leon S. Kennedy', '203040678', '203040678@mail.unpas.ac.id', 'Teknik Mesin', '60b4de2a21c35.jpg'),
+(17, 'Ethan Winters', '203040567', '203040567@mail.unpas.ac.id', 'Perancangan Wilayah &amp; Kota', '60b4de8b8559c.jpg'),
+(18, 'Ada Wong', '193040890', '193040890@mail.unpas.ac.id', 'Teknik Lingkungan', '60b4dec7a1338.jpg');
 
 -- --------------------------------------------------------
 
@@ -88,7 +92,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `user`

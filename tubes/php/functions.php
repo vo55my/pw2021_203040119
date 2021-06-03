@@ -1,7 +1,7 @@
 <?php
 function koneksi()
 {
-  return mysqli_connect('localhost', 'root', '', 'db_mycloth');
+  return mysqli_connect('localhost', 'root', '', 'tubes_203040119');
 }
 
 function query($query)

@@ -8,13 +8,14 @@ Mempelajari PHP dan MySQL
 */
 
 // koneksi ke database
-$conn = mysqli_connect("localhost", "root", "", "phpdasar");
+$conn = mysqli_connect("localhost", "root", "", "kuliah_203040119");
 
-function query($query) {
+function query($query)
+{
     global $conn;
     $result = mysqli_query($conn, $query);
     $rows = [];
-    while( $row = mysqli_fetch_assoc($result) ) {
+    while ($row = mysqli_fetch_assoc($result)) {
         $rows[] = $row;
     }
     return $rows;

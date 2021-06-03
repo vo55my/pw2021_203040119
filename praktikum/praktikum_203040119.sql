@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 25, 2021 at 11:56 AM
+-- Generation Time: Jun 03, 2021 at 08:05 AM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.4.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `pw_tubes_203040119`
+-- Database: `praktikum_203040119`
 --
 
 -- --------------------------------------------------------
@@ -54,6 +54,25 @@ INSERT INTO `kampus` (`id`, `logo`, `nama`, `alamat`, `berdiri`, `kota`, `situs`
 (9, 'UNDIP.png', 'Universitas Diponegoro', 'Jl. Prof. Sudarto No. 13, Tembalang, Kec. Tembalang, 50275', '9 Januari 1957', 'Kota Semarang', 'www.undip.ac.id', '1994'),
 (10, 'UNEJ.png', 'Universitas Jember', 'Jl. Kalimantan No. 37, Krajan Timur, Sumbersari, Kec. Sumbersari, 68121', '10 November 1957', 'Kab. Jember', 'www.unej.ac.id', '2053');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(64) NOT NULL,
+  `password` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`) VALUES
+(0, 'hilmy', '$2y$10$z9XQx2rFe.GRUMcO28xQje8u1FhyHLngAcHf1nORy4fQWGda/PAqi');
+
 --
 -- Indexes for dumped tables
 --
@@ -65,6 +84,12 @@ ALTER TABLE `kampus`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -72,7 +97,7 @@ ALTER TABLE `kampus`
 -- AUTO_INCREMENT for table `kampus`
 --
 ALTER TABLE `kampus`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
