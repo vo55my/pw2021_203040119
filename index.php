@@ -31,7 +31,8 @@
     .kuliah,
     .praktikum,
     .tubes {
-      margin: 60px 150px;
+      margin-top: 60px;
+      margin-bottom: 60px;
     }
 
     .home p,
@@ -221,7 +222,7 @@
           </ul>
         </div>
         <div class="col s12 m6">
-          <ul class="collapsible">
+          <ul class="collapsible popout">
             <li>
               <div class="collapsible-header hoverable">Tugas 4</div>
               <div class="collapsible-body hoverable">Latihan 4a<a href="praktikum/tugas4/latihan4a/index.php"><i class="material-icons right red-text">send</i></a></div>
@@ -251,25 +252,23 @@
   <!-- tubes -->
   <section id="tubes" class="tubes scrollspy">
     <div class="container">
-      <div class="row">
-        <h2 class="center red-text text-darken-2">Tugas Besar</h2>
-        <p class="center">Klik untuk melihat akun yang terdaftar</p>
-        <ul class="collapsible">
-          <li>
-            <div class="collapsible-header">Tugas Besar</div>
-            <div class="collapsible-body hoverable">MyCloth Indonesia<a href="tubes/index.php"><i class="material-icons right red-text">send</i></a></div>
-            <div class="collapsible-body">
-              <p>Admin</p>
-              <p>Username : hilmy</p>
-              <p>Password : admin</p>
-              <br>
-              <p>Member</p>
-              <p>Username : dinda</p>
-              <p>Password : member</p>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <h2 class="center red-text text-darken-2">Tugas Besar</h2>
+      <p class="center">Klik untuk melihat akun yang terdaftar</p>
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header">Tugas Besar</div>
+          <div class="collapsible-body hoverable">MyCloth Indonesia<a href="tubes/index.php"><i class="material-icons right red-text">send</i></a></div>
+          <div class="collapsible-body">
+            <p>Admin</p>
+            <p>Username : hilmy</p>
+            <p>Password : admin</p>
+            <br>
+            <p>Member</p>
+            <p>Username : dinda</p>
+            <p>Password : member</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
